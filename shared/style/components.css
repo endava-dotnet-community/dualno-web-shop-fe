@@ -14,19 +14,18 @@
   text-transform: uppercase;
 }
 
-.ws-input:focus { 
+.ws-input:focus {
   outline: none;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
 }
-
 
 .ws-button {
   width: 298px;
   height: 43px;
   margin-top: 23px;
   margin-bottom: 8px;
-  background-color: #FFFFFF;
-  color: #FFD130;
+  background-color: #ffffff;
+  color: #ffd130;
   text-transform: uppercase;
   -webkit-text-stroke: 0.75px black;
   font-weight: bold;
@@ -36,23 +35,23 @@
   border: none;
 }
 
-.ws-button:hover{
+.ws-button:hover {
   cursor: pointer;
   box-shadow: 0 4px 4px rgb(0, 0, 0, 0.5);
 }
 
-.ws-hiperLink a{
+.ws-hiperLink a {
   color: #777777;
   font-family: monospace;
   font-size: 16px;
 }
 
-.ws-hiperLink.selected a{
+.ws-hiperLink.selected a {
   color: black;
   font-weight: 500;
 }
 
-.ws-hiperLink a:hover{
+.ws-hiperLink a:hover {
   font-weight: 500;
   color: black;
 }

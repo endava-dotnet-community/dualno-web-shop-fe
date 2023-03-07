@@ -1,22 +1,22 @@
-body{
-    background-color: #F1F1F1;
+body {
+  background-color: #f1f1f1;
 }
 
-.mainContent{
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    margin-top: 50px;
+.mainContent {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  margin-top: 50px;
 }
 
-.logo{
-    width: 120px;
-    height: 120px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 130px;
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
 }
 
 .ws-hiperLink {
-    margin-top: 12px;
+  margin-top: 12px;
 }
