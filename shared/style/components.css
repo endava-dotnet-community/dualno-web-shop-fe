@@ -1,15 +1,24 @@
 .ws-input {
   width: 264px;
   height: 18px;
-  border: black solid 1px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 12.5px 17px;
   /**font settings*/
   font-family: montserrat;
   font-size: 14px;
+}
+
+.ws-input::placeholder {
   text-transform: uppercase;
 }
+
+.ws-input:focus { 
+  outline: none;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
 
 .ws-button {
   width: 298px;
@@ -23,19 +32,13 @@
   font-weight: bold;
   font-size: 20px;
   border-radius: 4px;
-  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.3);
   border: none;
 }
 
 .ws-button:hover{
   cursor: pointer;
-  box-shadow: none;
-}
-
-.ws-hiperLink {
-  height: 20px;
-  margin-top: 12px;
-  color: black;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.5);
 }
 
 .ws-hiperLink a{
@@ -46,14 +49,10 @@
 
 .ws-hiperLink.selected a{
   color: black;
-
-}
-
-body{
-  background-color: #F1F1F1;
+  font-weight: 500;
 }
 
 .ws-hiperLink a:hover{
-  color: #FFD130;
-  -webkit-text-stroke: 0.5px black;
+  font-weight: 500;
+  color: black;
 }

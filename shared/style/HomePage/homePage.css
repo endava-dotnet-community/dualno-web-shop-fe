@@ -6,7 +6,6 @@
 
 .top-header{
     width: 900px;
-    height: 113px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -53,8 +52,8 @@
 
 .logo-group3{
     display: flex;
-    height: 20px;
-    width: 20px;
+    align-items: center;
+    gap: 40px;
     margin-left: 40px;
 }
 
@@ -67,12 +66,6 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-}
-
-.navBarGroup a{
-    font-size: 16px;
-    color:#000000;
-    font-family: monospace;
 }
 
 .promoHeader{
@@ -131,7 +124,7 @@
 .productManipulations{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .productFilter button {
@@ -147,7 +140,7 @@
 
 .productFilter button:hover {
     cursor: pointer;
-    background-color: #2b3947;
+    background-color: #304559;
 }
 
 .productFilter img {
@@ -173,13 +166,19 @@
     height: 56px;
     display: flex;
     justify-content: space-between;
-    /*display: none;*/
+    cursor: default;
+    display: none;
+}
+
+.productCard:hover .lager {
+    display: flex;
 }
 
 .lagerAction {
     display: flex;
     align-items: center;
     gap: 14px;
+    cursor: pointer;
 }
 
 .productName h3 {
@@ -206,6 +205,7 @@
 }
 
 .productCard {
+    font-family: monospace;
     width: fit-content;
 }
 
