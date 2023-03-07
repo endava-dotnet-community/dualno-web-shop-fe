@@ -13,18 +13,18 @@
 <body>
 
 
-    <div id = "pageHeading">
-        <div id="top-header">
-            <div id ="logo-group">
-                <div id="logo-group1"><img src="../image/MainPage/search.png" alt="search"></div>
+    <div class = "pageHeading">
+        <div class="top-header">
+            <div class ="logo-group">
+                <div class="logo-group1"><img src="../image/MainPage/search.png" alt="search"></div>
                 
-                <div id="logo-group2">
+                <div class="logo-group2">
                 <img src="../image/MainPage/left-title-decoration.png" alt="left-title">
                 <h1>Web Shop</h1>
                 <img src="../image/MainPage/right-title-decoration.png" alt="right-title">
                 </div>
 
-                <div id="logo-group3">
+                <div class="logo-group3">
                     <a href="#"><img src="../image/MainPage/user-profile.png" alt ="user profile"> </a>
                     <a href="#"><img src="../image/MainPage/cart.png" alt="cart"></a>
                 </div> 
@@ -32,7 +32,7 @@
 
             </div>
 
-            <div id ="nav-bar">
+            <div class ="nav-bar">
                 <div class = "navBarGroup">
                 <a href="#">Shop</a>
                 <a href="#">About us</a>
@@ -42,7 +42,7 @@
 
         </div>
 
-        <div id="promoHeader">
+        <div class="promoHeader">
             <div class = "promoText">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, veniam?</p>
@@ -54,7 +54,7 @@
     </div>
 
 
-    <div id="products">
+    <div class="products">
         
         <div class ="productTitle">
             <h1>Products</h1>
@@ -88,25 +88,34 @@
         <div class="productsGrid">
 
             <div class = "productCard">
-                <div class ="productDisplay">
-                    <img class="productImage" src="../image/MainPage/product.png" alt=""> 
-                </div>  
-                
-                <div class="lager">
-                    <p></p>
-                    <a href ="#">
-                        <img src="../image/MainPage/cart.png" alt="">
-                        <p>Add to cart</p>
-                    </a>
+                <div class="productDisplayGroup">
+                    <div class ="productDisplay">
+                        <img class="productImage" src="../image/MainPage/product.png" alt=""> 
+                    </div>  
+                    
+                    <div class="lager">
+                        <div class="lagerInfo">
+                            <p>3 left</p>
+                        </div>
+                        <div class="lagerAction">
+                            <img src="../image/MainPage/cart.png" alt="">
+                            <div>
+                                <p>Add to cart</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
                 <div class ="productName">
                     <h3>Name of product</h3>
                 </div>
 
-                <div class="product-type-price">
-                    <p>Type of product</p>
-                    <p>$99.99</p>
+                <div class="product-type-price-group">
+                    <div class="product-type">
+                        <p>Type of product</p>
+                    </div>
+                    <div class="product-price">
+                        <p>$99.99</p>
+                    </div>
                 </div> 
                 
 
@@ -117,6 +126,28 @@
 
 
     </div>
-    
+    <div class="footer">
+        <div class="logo-group2">
+            <img src="../image/MainPage/left-title-decoration.png" alt="left-title">
+            <h1>Web Shop</h1>
+            <img src="../image/MainPage/right-title-decoration.png" alt="right-title">
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fuga, impedit eius omnis quia ea cupiditate ipsam sint ratione enim!</p>
+        
+        <div class="footerImgGroup">
+            <img src="../image/MainPage/facebook.png" alt="facebook">
+            <img src="../image/MainPage/twitter.png" alt="twitter">
+            <img src="../image/MainPage/linkedin.png" alt="linkedin">
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <div class="copyrightText">
+            <p>
+                &copy 2023 Lorem, Inc.
+            </p>
+        </div>
+        <img src="../image/MainPage/icons-payment.png" alt="">
+    </div>
 </body>
 </html>
