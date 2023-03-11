@@ -1,164 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../shared/style/reset.css" />
-    <link rel="stylesheet" href="../shared/style/components.css" />
-    <link rel="stylesheet" href="../shared/style/HomePage/homePage.css" />
-  </head>
-  <body>
-    <div class="pageHeading">
-      <div class="top-header">
-        <div class="logo-group">
-          <div class="logo-group1">
-            <img src="../image/MainPage/search.png" alt="search" />
-          </div>
 
-          <div class="logo-group2">
-            <img
-              src="../image/MainPage/left-title-decoration.png"
-              alt="left-title"
-            />
-            <h1>Web Shop</h1>
-            <img
-              src="../image/MainPage/right-title-decoration.png"
-              alt="right-title"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../shared/style/reset.css" />
+  <link rel="stylesheet" href="../shared/style/components.css" />
+  <link rel="stylesheet" href="../shared/style/HomePage/homePage.css" />
+</head>
 
-          <div class="logo-group3">
-            <a href="#"
-              ><img
-                src="../image/MainPage/user-profile.png"
-                alt="user profile"
-              />
-            </a>
-            <a href="#"><img src="../image/MainPage/cart.png" alt="cart" /></a>
-          </div>
+<body>
+  <div class="pageHeading">
+    <div class="top-header">
+      <div class="logo-group">
+        <div class="logo-group1">
+          <img src="../image/MainPage/search.png" alt="search" />
         </div>
 
-        <div class="nav-bar">
-          <div class="navBarGroup">
-            <div class="ws-hiperLink">
-              <a href="#">Shop</a>
-            </div>
-            <div class="ws-hiperLink">
-              <a href="#">About us</a>
-            </div>
-            <div class="ws-hiperLink">
-              <a href="#">Cart</a>
-            </div>
-          </div>
+        <div class="logo-group2">
+          <img src="../image/MainPage/left-title-decoration.png" alt="left-title" />
+          <h1>Web Shop</h1>
+          <img src="../image/MainPage/right-title-decoration.png" alt="right-title" />
+        </div>
+
+        <div class="logo-group3">
+          <a href="#"><img src="../image/MainPage/user-profile.png" alt="user profile" />
+          </a>
+          <a href="#"><img src="../image/MainPage/cart.png" alt="cart" /></a>
         </div>
       </div>
 
-      <div class="promoHeader">
-        <div class="promoText">
-          <h1>Lorem Ipsum</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
-            veniam?
-          </p>
-        </div>
-        <div class="promoImg">
-          <img
-            src="../image/MainPage/new-product-photo.png"
-            alt="New Product"
-          />
+      <div class="nav-bar">
+        <div class="navBarGroup">
+          <div class="ws-hiperLink">
+            <a href="#">Shop</a>
+          </div>
+          <div class="ws-hiperLink">
+            <a href="#">About us</a>
+          </div>
+          <div class="ws-hiperLink">
+            <a href="#">Cart</a>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="products">
-      <div class="productTitle">
-        <h1>Products</h1>
+    <div class="promoHeader">
+      <div class="promoText">
+        <h1>Lorem Ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+          veniam?
+        </p>
+      </div>
+      <div class="promoImg">
+        <img src="../image/MainPage/new-product-photo.png" alt="New Product" />
+      </div>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="productTitle">
+      <h1>Products</h1>
+    </div>
+
+    <div class="productManipulations">
+      <div class="categoryNavMenu">
+        <div class="ws-hiperLink selected"><a href="#">All products</a></div>
+        <div class="ws-hiperLink"><a href="#">Category 1</a></div>
+        <div class="ws-hiperLink"><a href="#">Category 2</a></div>
+        <div class="ws-hiperLink"><a href="#">Category 3</a></div>
       </div>
 
-      <div class="productManipulations">
-        <div class="categoryNavMenu">
-          <div class="ws-hiperLink selected"><a href="#">All products</a></div>
-          <div class="ws-hiperLink"><a href="#">Category 1</a></div>
-          <div class="ws-hiperLink"><a href="#">Category 2</a></div>
-          <div class="ws-hiperLink"><a href="#">Category 3</a></div>
+      <div class="ws-filter">
+        <button>
+          <img src="../image/MainPage/filter.png" alt="filter" />
+          Filter
+        </button>
+      </div>
+    </div>
+
+    <div class="productFilterOption">
+      <div class="filterValues">
+        <div>
+          <label for="category">Category:</label>
+
+          <select class="ws-dropDown" name="category" id="">
+            <option value="">Option1</option>
+            <option value="">Option2</option>
+            <option value="">Option3</option>
+            <option value="">Option4</option>
+          </select>
         </div>
 
-        <div class="productFilter">
-          <button>
-            <img src="../image/MainPage/filter.png" alt="filter" />
-            Filter
-          </button>
-        </div>
+        <input class="ws-input" type="text" placeholder="Min Price" />
+        <input class="ws-input" type="text" placeholder="Max Price" />
       </div>
 
-      <div class="productsGrid">
-        <div class="productCard">
-          <div class="productDisplayGroup">
-            <div class="productDisplay">
-              <img
-                class="productImage"
-                src="../image/MainPage/product.png"
-                alt=""
-              />
+      <div class="ws-filter">
+        <button>Apply</button>
+      </div>
+
+    </div>
+
+    <div class="productsGrid">
+      <div class="productCard">
+        <div class="productDisplayGroup">
+          <div class="productDisplay">
+            <img class="productImage" src="../image/MainPage/product.png" alt="" />
+          </div>
+
+          <div class="lager">
+            <div class="lagerInfo">
+              <p>3 left</p>
             </div>
-
-            <div class="lager">
-              <div class="lagerInfo">
-                <p>3 left</p>
+            <div class="lagerAction">
+              <img src="../image/MainPage/cart-white.png" alt="" />
+              <div>
+                <p>Add to cart</p>
               </div>
-              <div class="lagerAction">
-                <img src="../image/MainPage/cart-white.png" alt="" />
-                <div>
-                  <p>Add to cart</p>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="productName">
-            <h3>Name of product</h3>
-          </div>
+        </div>
+        <div class="productName">
+          <h3>Name of product</h3>
+        </div>
 
-          <div class="product-type-price-group">
-            <div class="product-type">
-              <p>Type of product</p>
-            </div>
-            <div class="product-price">
-              <p>$99.99</p>
-            </div>
+        <div class="product-type-price-group">
+          <div class="product-type">
+            <p>Type of product</p>
+          </div>
+          <div class="product-price">
+            <p>$99.99</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer">
-      <div class="logo-group2">
-        <img
-          src="../image/MainPage/left-title-decoration.png"
-          alt="left-title"
-        />
-        <h1>Web Shop</h1>
-        <img
-          src="../image/MainPage/right-title-decoration.png"
-          alt="right-title"
-        />
-      </div>
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fuga,
-        impedit eius omnis quia ea cupiditate ipsam sint ratione enim!
-      </p>
+  </div>
+  <div class="footer">
+    <div class="logo-group2">
+      <img src="../image/MainPage/left-title-decoration.png" alt="left-title" />
+      <h1>Web Shop</h1>
+      <img src="../image/MainPage/right-title-decoration.png" alt="right-title" />
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo fuga,
+      impedit eius omnis quia ea cupiditate ipsam sint ratione enim!
+    </p>
 
-      <div class="footerImgGroup">
-        <img src="../image/MainPage/facebook.png" alt="facebook" />
-        <img src="../image/MainPage/twitter.png" alt="twitter" />
-        <img src="../image/MainPage/linkedin.png" alt="linkedin" />
+    <div class="footerImgGroup">
+      <img src="../image/MainPage/facebook.png" alt="facebook" />
+      <img src="../image/MainPage/twitter.png" alt="twitter" />
+      <img src="../image/MainPage/linkedin.png" alt="linkedin" />
+    </div>
+  </div>
+  <div class="copyright">
+    <div class="copyrightText">
+      <p>&copy 2023 Lorem, Inc.</p>
+    </div>
+    <img src="../image/MainPage/icons-payment.png" alt="" />
+  </div>
+
+  <div class="backdrop"></div>
+  <div class="modal">
+    <div class="addProductTitle">
+      <h1>Add New Product</h1>
+    </div>
+
+    <input class="ws-input" type="text" placeholder="PRODUCT NAME">
+    <input class="ws-input" type="text" placeholder="PRODUCT TYPE">
+    <input class="ws-input" type="text" name="" id="" placeholder="PRODUCT PRICE">
+
+    <div class="addProductImageGroup">
+      <div class="addProductImage">
+        <img src="../image/MainPage/product.png" alt="">
+      </div>
+      <p>Upload product image</p>
+    </div>
+
+
+    <div class="ws-product-row">
+      <div class="productRowImage">
+        <img src="../image/MainPage/product.png" alt="">
+      </div>
+      <div>
+        <p>Product Name</p>
+        <p>Type</p>
+      </div>
+      <div>
+        <p>0</p>
+        <button><img src="../image/MainPage/arrow-up.png" alt=""></button>
+        <button><img src="../image/MainPage/arrow-down.png" alt=""></button>
       </div>
     </div>
-    <div class="copyright">
-      <div class="copyrightText">
-        <p>&copy 2023 Lorem, Inc.</p>
-      </div>
-      <img src="../image/MainPage/icons-payment.png" alt="" />
-    </div>
-  </body>
+    <button class="ws-button">Add Product</button>
+  </div>
+</body>
+
 </html>
