@@ -259,16 +259,8 @@
   justify-content: space-between;
 }
 
-.filterValues {
-  gap: 50px;
-  display: flex;
-}
-
-.filterValues :first-child {
-  margin-right: 15px;
-}
-
 .backdrop {
+  display: none;
   position: fixed;
   width: 100%;
   height: 100%;

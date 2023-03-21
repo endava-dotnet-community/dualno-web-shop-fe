@@ -1,0 +1,20 @@
+.ws-login-button {
+  width: 298px;
+  height: 43px;
+  margin-top: 23px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  color: #ffd130;
+  text-transform: uppercase;
+  -webkit-text-stroke: 0.75px black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 4px;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.3);
+  border: none;
+}
+
+.ws-login-button:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgb(0, 0, 0, 0.5);
+}

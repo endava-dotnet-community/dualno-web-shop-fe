@@ -7,8 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="../shared/style/reset.css" />
-  <link rel="stylesheet" href="../shared/style/components.css" />
-  <link rel="stylesheet" href="../shared/style/HomePage/homePage.css" />
+  <link rel="stylesheet" href="../shared/components/Link/style.css">
+  <link rel="stylesheet" href="../shared/components/ButtonFilter/style.css">
+  <link rel="stylesheet" href="../shared/components/Input/style.css">
+  <link rel="stylesheet" href="../shared/components/Dropdown/style.css">
+  <link rel="stylesheet" href="../shared/components/ProductRow/style.css">
+  <link rel="stylesheet" href="../shared/style/homePage.css" />
+  <!-- CDN icons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 
 <body>
@@ -74,7 +80,7 @@
         <div class="ws-hiperLink"><a href="#">Category 3</a></div>
       </div>
 
-      <div class="ws-filter">
+      <div class="ws-filter-button">
         <button>
           <img src="../image/MainPage/filter.png" alt="filter" />
           Filter
@@ -87,19 +93,43 @@
         <div>
           <label for="category">Category:</label>
 
-          <select class="ws-dropDown" name="category" id="">
+          <!-- <select class="ws-dropDown" name="category" id="">
             <option value="">Option1</option>
             <option value="">Option2</option>
             <option value="">Option3</option>
             <option value="">Option4</option>
-          </select>
+          </select> -->
+          <div class="ws-select">
+            <div class="select-btn">
+              <span>Select</span>
+              <i class="uil uil-angle-down"></i>
+            </div>
+            <div class="content">
+              <div class="search">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search">
+              </div>
+              <ul class="options">
+                <li>CATEGORY 1</li>
+                <li>CATEGORY 2</li>
+                <li>CATEGORY 3</li>
+                <li>CATEGORY 4</li>
+                <li>CATEGORY 5</li>
+                <li>CATEGORY 6</li>
+                <li>CATEGORY 7</li>
+                <li>CATEGORY 8</li>
+                <li>CATEGORY 9</li>
+                <li>CATEGORY 10</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
         <input class="ws-input" type="text" placeholder="Min Price" />
         <input class="ws-input" type="text" placeholder="Max Price" />
       </div>
 
-      <div class="ws-filter">
+      <div class="ws-filter-button">
         <button>Apply</button>
       </div>
 
@@ -163,40 +193,42 @@
     <img src="../image/MainPage/icons-payment.png" alt="" />
   </div>
 
-  <div class="backdrop"></div>
-  <div class="modal">
-    <div class="addProductTitle">
-      <h1>Add New Product</h1>
+  <div class="backdrop">
+    <div class="modal">
+      <div class="addProductTitle">
+        <h1>Add New Product</h1>
+      </div>
+
+      <input class="ws-input" type="text" placeholder="PRODUCT NAME">
+      <input class="ws-input" type="text" placeholder="PRODUCT TYPE">
+      <input class="ws-input" type="text" name="" id="" placeholder="PRODUCT PRICE">
+
+      <div class="addProductImageGroup">
+        <div class="addProductImage">
+          <img src="../image/MainPage/product.png" alt="">
+        </div>
+        <p>Upload product image</p>
+      </div>
+
+
+      <div class="ws-product-row">
+        <div class="productRowImage">
+          <img src="../image/MainPage/product.png" alt="">
+        </div>
+        <div>
+          <p>Product Name</p>
+          <p>Type</p>
+        </div>
+        <div>
+          <p>0</p>
+          <button><img src="../image/MainPage/arrow-up.png" alt=""></button>
+          <button><img src="../image/MainPage/arrow-down.png" alt=""></button>
+        </div>
+      </div>
+      <button class="ws-button">Add Product</button>
     </div>
-
-    <input class="ws-input" type="text" placeholder="PRODUCT NAME">
-    <input class="ws-input" type="text" placeholder="PRODUCT TYPE">
-    <input class="ws-input" type="text" name="" id="" placeholder="PRODUCT PRICE">
-
-    <div class="addProductImageGroup">
-      <div class="addProductImage">
-        <img src="../image/MainPage/product.png" alt="">
-      </div>
-      <p>Upload product image</p>
-    </div>
-
-
-    <div class="ws-product-row">
-      <div class="productRowImage">
-        <img src="../image/MainPage/product.png" alt="">
-      </div>
-      <div>
-        <p>Product Name</p>
-        <p>Type</p>
-      </div>
-      <div>
-        <p>0</p>
-        <button><img src="../image/MainPage/arrow-up.png" alt=""></button>
-        <button><img src="../image/MainPage/arrow-down.png" alt=""></button>
-      </div>
-    </div>
-    <button class="ws-button">Add Product</button>
   </div>
+
 </body>
 
 </html>

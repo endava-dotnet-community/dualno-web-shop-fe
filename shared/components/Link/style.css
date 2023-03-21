@@ -1,0 +1,15 @@
+.ws-hiperLink a {
+  color: #777777;
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.ws-hiperLink.selected a {
+  color: black;
+  font-weight: 500;
+}
+
+.ws-hiperLink a:hover {
+  font-weight: 500;
+  color: black;
+}
