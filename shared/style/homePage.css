@@ -257,10 +257,26 @@
   align-items: center;
   font-family: monospace;
   justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.filterValues {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.filterValues div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .backdrop {
   display: none;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -271,11 +287,8 @@
 }
 
 .modal {
-  position: fixed;
   z-index: 200;
-  top: 40%;
-  left: 40%;
-  width: 20%;
+  width: 388px;
   background-color: rgb(231, 231, 231);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
   padding: 27px 19px;
@@ -304,6 +317,32 @@
 
 .modal input {
   font-family: monospace;
+  margin-bottom: 20px;
+}
+
+.addProductImageGroup {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  gap: 13px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.addProductImageGroup:hover {
+  cursor: pointer;
+}
+
+.addProductImageGroup:hover p {
+  font-weight: 600;
+}
+
+.addProductImageGroup:hover .addProductImage {
+  background-color: #f0f0f0;
 }
 
 .addProductImage {
@@ -320,14 +359,4 @@
   height: 39px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.addProductImageGroup {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 14px;
-  gap: 13px;
-  margin-bottom: 25px;
 }

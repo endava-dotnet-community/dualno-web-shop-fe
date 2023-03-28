@@ -4,22 +4,58 @@
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 5px;
+}
+
+.ws-product-row .img-name-type-group {
+  display: flex;
+  gap: 12px;
+}
+
+.ws-product-row .img-name-type-group div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+}
+
+.ws-product-row .productRowName {
+  font-weight: 600;
 }
 
 .ws-product-row .productRowImage {
   background-color: #D9D9D9;
   border-radius: 8px;
-  width: 46px;
+  width: 48px;
   height: 48px;
   display: flex;
   align-items: center;
 }
 
 .ws-product-row .productRowImage img {
-  height: 37px;
+  height: 39px;
   width: 39px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.ws-product-row .lager-manipulation-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ws-product-row .lager-manipulation-group div:first-child{
+  height: fit-content;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.ws-product-row .lager-manipulation-group button{
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  outline: none;
 }

@@ -6,13 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="../shared/style/reset.css" />
-  <link rel="stylesheet" href="../shared/components/Link/style.css">
-  <link rel="stylesheet" href="../shared/components/ButtonFilter/style.css">
-  <link rel="stylesheet" href="../shared/components/Input/style.css">
-  <link rel="stylesheet" href="../shared/components/Dropdown/style.css">
-  <link rel="stylesheet" href="../shared/components/ProductRow/style.css">
-  <link rel="stylesheet" href="../shared/style/homePage.css" />
+  <link rel="stylesheet" href="/shared/style/reset.css" />
+  <link rel="stylesheet" href="/shared/components/Link/style.css">
+  <link rel="stylesheet" href="/shared/components/ButtonFilter/style.css">
+  <link rel="stylesheet" href="/shared/components/Input/style.css">
+  <link rel="stylesheet" href="/shared/components/Dropdown/style.css">
+  <link rel="stylesheet" href="/shared/components/ProductRow/style.css">
+  <link rel="stylesheet" href="/shared/components/Button/style.css">
+  <link rel="stylesheet" href="/shared/style/homePage.css" />
   <!-- CDN icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
@@ -92,13 +93,6 @@
       <div class="filterValues">
         <div>
           <label for="category">Category:</label>
-
-          <!-- <select class="ws-dropDown" name="category" id="">
-            <option value="">Option1</option>
-            <option value="">Option2</option>
-            <option value="">Option3</option>
-            <option value="">Option4</option>
-          </select> -->
           <div class="ws-select">
             <div class="select-btn">
               <span>Select</span>
@@ -110,16 +104,6 @@
                 <input type="text" placeholder="Search">
               </div>
               <ul class="options">
-                <li>CATEGORY 1</li>
-                <li>CATEGORY 2</li>
-                <li>CATEGORY 3</li>
-                <li>CATEGORY 4</li>
-                <li>CATEGORY 5</li>
-                <li>CATEGORY 6</li>
-                <li>CATEGORY 7</li>
-                <li>CATEGORY 8</li>
-                <li>CATEGORY 9</li>
-                <li>CATEGORY 10</li>
               </ul>
             </div>
           </div>
@@ -201,7 +185,7 @@
 
       <input class="ws-input" type="text" placeholder="PRODUCT NAME">
       <input class="ws-input" type="text" placeholder="PRODUCT TYPE">
-      <input class="ws-input" type="text" name="" id="" placeholder="PRODUCT PRICE">
+      <input class="ws-input" type="number" name="" id="" placeholder="PRODUCT PRICE">
 
       <div class="addProductImageGroup">
         <div class="addProductImage">
@@ -212,23 +196,29 @@
 
 
       <div class="ws-product-row">
-        <div class="productRowImage">
-          <img src="../image/MainPage/product.png" alt="">
+        <div class="img-name-type-group">
+          <div class="productRowImage">
+            <img src="../image/MainPage/product.png" alt="">
+          </div>
+          <div>
+            <div class="productRowName"><p>Product Name</p></div>
+            <div class="productRowType"><p>Type</p></div>
+          </div>
         </div>
-        <div>
-          <p>Product Name</p>
-          <p>Type</p>
-        </div>
-        <div>
-          <p>0</p>
-          <button><img src="../image/MainPage/arrow-up.png" alt=""></button>
+        <div class="lager-manipulation-group">
+          <div>
+            <p>0</p>
+          </div>
+          <div>
+            <button><img src="../image/MainPage/arrow-up.png" alt=""></button>
           <button><img src="../image/MainPage/arrow-down.png" alt=""></button>
+          </div>
         </div>
       </div>
       <button class="ws-button">Add Product</button>
     </div>
   </div>
-
+  <script src="/shared/components/Dropdown/script.js"></script>
 </body>
 
 </html>
