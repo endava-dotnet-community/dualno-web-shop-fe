@@ -33,13 +33,12 @@
   height: 48px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .ws-product-row .productRowImage img {
   height: 39px;
   width: 39px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .ws-product-row .lager-manipulation-group {

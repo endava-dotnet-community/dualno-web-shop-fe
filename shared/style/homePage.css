@@ -16,6 +16,7 @@
   height: 60px;
   border-bottom: 1px solid #e3e3e3;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .logo-group2 {
@@ -39,18 +40,20 @@
   font-family: monospace;
 }
 
-.logo-group1 img {
+.logo-group1 {
+  margin-right: 60px;
+  display: flex;
+  height: 42px;
+}
+
+.logo-group1>img {
   height: 15px;
   width: 15px;
   position: absolute;
   margin-left: 15px;
   cursor: pointer;
-}
-
-.logo-group1 {
-  margin-right: 60px;
-  align-items: center;
-  display: flex;
+  z-index: 100;
+  margin-top: 13.5px;
 }
 
 .logo-group1>input {
@@ -60,6 +63,8 @@
 
 .logo-group1.active>input {
   display: block;
+  position: absolute;
+  z-index: 50;
 }
 
 .logo-group3 {
@@ -523,4 +528,47 @@
   margin-right: auto;
   width: fit-content;
   margin-top: 20px;
+}
+
+.search-popup {
+  width: 390px;
+  background-color: white;
+  position: absolute;
+  margin-top: 51px;
+  border-radius: 20px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.search-popup.active {
+  display: block;
+}
+
+.search-popup>.search-popup-results {
+  overflow-y: auto;
+  max-height: 175px;
+}
+
+.search-popup>.search-popup-results>.ws-product-row {
+  margin: 15px auto 0 auto;
+  border-radius: 15px;
+  width: 370px;
+  padding: 10px;
+  height: 70px;
+  box-shadow: none;
+}
+
+.search-popup>.search-popup-results>.ws-product-row:last-child {
+  margin-bottom: 2px;
+}
+
+.search-popup>.search-popup-results>.ws-product-row:hover {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.search-popup>p {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 15px;
 }
