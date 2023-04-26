@@ -285,8 +285,12 @@
   left: 0;
   background-color: #77777757;
 }
+.backdrop.active{
+  display: flex;
+}
 
 .modal {
+  display: none;
   z-index: 200;
   width: 388px;
   background-color: rgb(231, 231, 231);
@@ -359,4 +363,76 @@
   height: 39px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.modalCart{
+  background-color: #fff;
+  z-index: 200;
+  font-family: monospace;
+  border-radius: 15px;
+  padding: 50px 30px;
+  width: 600px;
+}
+.modalHeading{
+  display: flex;
+  align-items: center;
+  padding-bottom: 22px;
+  border-bottom: 1.5px solid #D0CFCF;
+  margin-bottom: 25px;
+}
+.modalHeading p{
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+.modalHeading div:first-child {
+
+   font-size: 25px;
+   transform: rotate(90deg);
+}
+.modalDesc p:first-child{
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.modalDesc p:last-child{
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.modalCart .ws-product-row{
+  margin-bottom: 40px;
+
+}
+.modalCart .ws-product-row:last-child{
+  margin-bottom: 0;
+}
+.payCard{
+  background-color: #FFD130;
+  width: 388px;
+  border-radius: 20px;
+  padding: 27px 19px 21px 19px;
+  font-family: monospace;
+}
+.payCard>p:first-child{
+  font-weight: 600;
+  font-size:20px;
+  margin-bottom: 24px;
+
+}
+.payCard>p:nth-child(2){
+  font-weight: 500;
+  font-size:16px;
+  margin-bottom: 14px;
+
+}
+.payCard>.cardTypes{
+  display: flex;
+  gap:17px;
+  margin-bottom: 27px;
+}
+.payCard>.input-label{
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
