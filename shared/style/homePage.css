@@ -42,12 +42,24 @@
 .logo-group1 img {
   height: 15px;
   width: 15px;
+  position: absolute;
+  margin-left: 15px;
+  cursor: pointer;
 }
 
 .logo-group1 {
   margin-right: 60px;
   align-items: center;
   display: flex;
+}
+
+.logo-group1>input {
+  padding-left: 50px;
+  display: none;
+}
+
+.logo-group1.active>input {
+  display: block;
 }
 
 .logo-group3 {
@@ -253,11 +265,15 @@
 }
 
 .productFilterOption {
-  display: flex;
+  display: none;
   align-items: center;
   font-family: monospace;
   justify-content: space-between;
   margin-bottom: 35px;
+}
+
+.productFilterOption.active {
+  display: flex;
 }
 
 .filterValues {
@@ -371,8 +387,10 @@
   font-family: monospace;
   border-radius: 15px;
   padding: 50px 30px;
-  width: 600px;
+  display: flex;
+  gap: 150px;
 }
+
 .modalHeading{
   display: flex;
   align-items: center;
@@ -431,8 +449,78 @@
   gap:17px;
   margin-bottom: 27px;
 }
-.payCard>.input-label{
+.payCard .input-label{
   font-weight: 500;
   font-size: 14px;
   margin-bottom: 5px;
+}
+
+.expdateCvv {
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #7C7C7C;
+}
+
+.expdateCvv {
+  margin-bottom: 15px;
+}
+
+.expdateCvv div {
+  width: fit-content;
+  margin-bottom: 12px;
+}
+
+.payCard input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.modalCart .priceSum {
+  display: flex;
+  justify-content: space-between;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 26px;
+}
+
+.payCard .priceSum div:last-child {
+  text-align: right;
+}
+
+.modalCart .ws-button.checkout {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 20px 18px 24px;
+}
+
+.payOnDeliveryCard {
+  background-color: #FFD130;
+  width: 388px;
+  height: 282px;
+  border-radius: 20px;
+  padding: 27px 19px 22px 19px;
+}
+
+.payOnDeliveryCard .title {
+  font-size: 22px;
+  font-weight: 600;
+  border-bottom: 1px solid #7C7C7C;
+  padding-bottom: 24px;
+  margin-bottom: 15px;
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 150px;
+  align-items: flex-end;
+}
+
+.radioButton {
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  margin-top: 20px;
 }

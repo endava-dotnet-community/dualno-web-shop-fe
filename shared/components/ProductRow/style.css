@@ -1,12 +1,13 @@
 .ws-product-row {
   background-color: white;
   padding: 6px;
+  max-width: 350px;
   border-radius: 4px;
-  margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.251);
 }
 
 .ws-product-row .img-name-type-group {
@@ -45,17 +46,26 @@
   display: flex;
   align-items: center;
   gap: 4px;
+
 }
 
 .ws-product-row .lager-manipulation-group div:first-child{
   height: fit-content;
   font-weight: 600;
   font-size: 14px;
-}
 
+}
+.ws-product-row .lager-manipulation-group div:last-child{
+  width: 29px;
+}
 .ws-product-row .lager-manipulation-group button{
   cursor: pointer;
   background-color: white;
   border: none;
   outline: none;
+}
+.ws-product-row .price-delete-group{
+  display: flex;
+  align-items: center;
+  gap:36px;
 }

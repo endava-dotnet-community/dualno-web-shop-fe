@@ -176,14 +176,13 @@
     </div>
     <img src="../image/MainPage/icons-payment.png" alt="" />
   </div>
-  <div class="backdrop active">
+
+  <div class="backdrop">
     <div class="modalCart">
       <div class="cartStock">
         <div class="modalHeading">
           <div><i class="uil uil-angle-down"></i></div>
-          <div>
-            <p>Shopping Continue</p>
-          </div>
+          <div><p>Shopping Continue</p></div>
         </div>
         <div class="modalDesc">
           <p>Shopping cart</p>
@@ -193,15 +192,11 @@
           <div class="ws-product-row">
             <div class="img-name-type-group">
               <div class="productRowImage">
-                <img src="../image/MainPage/product.png" alt="">
+                <img src="../image/MainPage/product.png" alt="" />
               </div>
               <div>
-                <div class="productRowName">
-                  <p>Product Name</p>
-                </div>
-                <div class="productRowType">
-                  <p>Type</p>
-                </div>
+                <div class="productRowName"><p>Product Name</p></div>
+                <div class="productRowType"><p>Type</p></div>
               </div>
             </div>
             <div class="lager-manipulation-group">
@@ -209,51 +204,100 @@
                 <p>0</p>
               </div>
               <div>
-                <button><img src="../image/MainPage/arrow-up.png" alt=""></button>
-                <button><img src="../image/MainPage/arrow-down.png" alt=""></button>
+                <button>
+                  <img src="../image/MainPage/arrow-up.png" alt="" />
+                </button>
+                <button>
+                  <img src="../image/MainPage/arrow-down.png" alt="" />
+                </button>
               </div>
             </div>
             <div class="price-delete-group">
               <p>$99.99</p>
-              <img src="/image/Cart/bin.png">
+              <img src="/image/Cart/bin.png" />
             </div>
           </div>
         </div>
       </div>
-      <div class="payCard">
-        <p>Card Details</p>
-        <p>Card type</p>
-        <div class="cardTypes">
-          <img src="/image/Cart/master.png">
-          <img src="/image/Cart/visa.png">
-        </div>
-        <p class="input-label">Name on card</p>
-        <input type="text" class="ws-input" placeholder="Name">
-        <p class="input-label">Card number</p>
-        <input type="text" class="ws-input" placeholder="1111 2222 3333 4444">
-        <p class="input-label">Exparation date</p>
-        <input type="text" class="ws-input" placeholder="mm/yy">
-        <p class="input-label">CVV</p>
-        <input type="text" class="ws-input" placeholder="123">
-        <div class="priceSum">
-          <div>
-            <p>Subtotal</p>
-            <p>Tax</p>
-            <p>Total(Tax incl.)</p>
+      <div class="paymentMethods">
+        <div class="cardPayment">
+          <div class="payCard">
+            <p>Card Details</p>
+            <p>Card type</p>
+            <div class="cardTypes">
+              <img src="/image/Cart/master.png" />
+              <img src="/image/Cart/visa.png" />
+            </div>
+            <p class="input-label">Name on card</p>
+            <input type="text" class="ws-input" placeholder="Name" />
+            <p class="input-label">Card number</p>
+
+            <input
+              type="text"
+              class="ws-input"
+              placeholder="1111 2222 3333 4444"
+            />
+            <div class="expdateCvv">
+              <div>
+                <p class="input-label">Exparation date</p>
+                <input type="text" class="ws-input" placeholder="mm/yy" />
+              </div>
+              <div>
+                <p class="input-label">CVV</p>
+                <input type="text" class="ws-input" placeholder="123" />
+              </div>
+            </div>
+
+            <div class="priceSum">
+              <div>
+                <p>Subtotal</p>
+                <p>Tax</p>
+                <p>Total(Tax incl.)</p>
+              </div>
+              <div>
+                <p>$399.96</p>
+                <p>$14</p>
+                <p>$403.96</p>
+              </div>
+            </div>
+
+            <button class="ws-button checkout">
+              <p>$403.96</p>
+              <p>Checkout</p>
+              <img src="/image/Cart/checkout-arrow.png" />
+            </button>
           </div>
-          <div>
-            <p>$399.96</p>
-            <p>$14</p>
-            <p>$403.96</p>
+          <div class="radioButton">
+            <input type="radio" name="paymentMethodRadio" checked="checked" />
           </div>
         </div>
-        <button class="ws-button">
-          <p>$403.96</p>
-          <p>Checkout</p>
-          <img src="/image/Cart/checkout-arrow.png">
-        </button>
-      </div>
-      <div class="payOnDelivery">
+        <div class="payOnDelivery">
+          <div class="payOnDeliveryCard">
+            <div class="title">
+              <p>Pay on Delivery</p>
+            </div>
+            <div class="priceSum">
+              <div>
+                <p>Subtotal</p>
+                <p>Tax</p>
+                <p>Total(Tax incl.)</p>
+              </div>
+              <div>
+                <p>$399.96</p>
+                <p>$14</p>
+                <p>$403.96</p>
+              </div>
+            </div>
+            <button class="ws-button checkout">
+              <p>$403.96</p>
+              <p>Checkout</p>
+              <img src="/image/Cart/checkout-arrow.png" />
+            </button>
+          </div>
+          <div class="radioButton">
+            <input type="radio" name="paymentMethodRadio" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -305,6 +349,8 @@
     </div>
   </div>
   <script src="/shared/components/Dropdown/script.js"></script>
+  <script src="/js/homepage/filter.js"></script>
+  <script src="/js/homepage/search.js"></script>
 </body>
 
 </html>
