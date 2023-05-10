@@ -7,7 +7,6 @@ export const state = {
     isUserLoged: false,
     logedUser: "",
   },
-  // Async function for updating state values
 };
 
 export const actions = {
@@ -15,12 +14,14 @@ export const actions = {
     await getAllProducts();
   },
   updateLoginState: (user) => {
-    state.isUserLoged = true;
-    state.logedUser = user;
+    state.user.isUserLoged = true;
+    state.user.logedUser = user;
+  },
+  updateLogoutState: () => {
+    state.user.isUserLoged = false;
+    state.user.logedUser = "";
   },
   updateProducts: (products) => {
-    console.log('Step 6 - Provided products will be in state: ', products);
-    console.log('here I AM', state);
     state.products = products;
   }
 };

@@ -32,3 +32,12 @@ body {
 .ws-input {
   margin-bottom: 20px;
 }
+
+.error-message-login {
+  display: none;
+  color: rgb(255, 66, 66);
+}
+
+.error-message-login.active {
+  display: block;
+}

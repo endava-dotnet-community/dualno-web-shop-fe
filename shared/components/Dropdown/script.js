@@ -1,4 +1,4 @@
-import state from "../../../js/async/state";
+import { state } from "/js/async/state.js";
 
 const wrapper = document.querySelector('.ws-select');
 const selectBtn = wrapper.querySelector('.select-btn');
@@ -6,7 +6,6 @@ const options = wrapper.querySelector('.options');
 const selectBtnText = selectBtn.querySelector('span');
 const searchInput = wrapper.querySelector('input');
 
-state.updateState();
 const loadedData = state.products.map(currentItem => currentItem.name); // [product[0].name, product[1].name]
 
 const selectItem = (element) => {

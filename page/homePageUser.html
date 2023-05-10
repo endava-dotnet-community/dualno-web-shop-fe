@@ -16,6 +16,11 @@
   <link rel="stylesheet" href="/shared/style/homePage.css" />
   <!-- CDN icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- SCRIPTS -->
+  <script type="module" defer src="/shared/components/Dropdown/script.js"></script>
+  <script type="module" defer src="/js/homepage/filter.js"></script>
+  <script type="module" defer src="/js/homepage/search.js"></script>
+  <script type="module" defer src="/js/homepage/logout.js"></script>
 </head>
 
 <body>
@@ -38,7 +43,7 @@
         </div>
 
         <div class="logo-group3">
-          <a href="#"><img src="../image/MainPage/user-profile.png" alt="user profile" />
+          <a href="#" class="logout"><img src="../image/MainPage/user-profile.png" alt="user profile" />
           </a>
           <a href="#"><img src="../image/MainPage/cart.png" alt="cart" /></a>
         </div>
@@ -353,9 +358,6 @@
       <button class="ws-button">Add Product</button>
     </div>
   </div>
-  <script type="module" defer src="/shared/components/Dropdown/script.js"></script>
-  <script type="module" defer src="/js/homepage/filter.js"></script>
-  <script type="module" defer src="/js/homepage/search.js"></script>
 </body>
 
 </html>
