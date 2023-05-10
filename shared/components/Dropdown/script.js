@@ -1,26 +1,13 @@
+import state from "../../../js/async/state";
+
 const wrapper = document.querySelector('.ws-select');
 const selectBtn = wrapper.querySelector('.select-btn');
 const options = wrapper.querySelector('.options');
 const selectBtnText = selectBtn.querySelector('span');
 const searchInput = wrapper.querySelector('input');
 
-const loadedData = [
-  'Category 1',
-  'Category 2',
-  'Category 3',
-  'Category 4',
-  'Category 5',
-  'Category 6',
-  'Category 7',
-  'Category 8',
-  'Category 9',
-  'Category 10',
-  'IT',
-  'Medic',
-  'Fashion',
-  'Toys',
-  'Sport',
-];
+state.updateState();
+const loadedData = state.products.map(currentItem => currentItem.name); // [product[0].name, product[1].name]
 
 const selectItem = (element) => {
   selectBtnText.innerHTML = element.innerText;
