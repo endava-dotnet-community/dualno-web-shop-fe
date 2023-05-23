@@ -1,4 +1,4 @@
-import { getAllProducts } from "./product.js";
+import { getAllCategories, getAllProducts } from "./product.js";
 
 export const state = {
   products: [],
@@ -9,9 +9,17 @@ export const state = {
   },
 };
 
+export const initState = () => {
+  if(localStorage.getItem('loggedUser')) {
+    state.user.isUserLoged = true,
+    state.user.logedUser = localStorage.getItem('loggedUser');
+  }
+};
+
 export const actions = {
   updateStateFields: async () => {
     await getAllProducts();
+    await getAllCategories();
   },
   updateLoginState: (user) => {
     state.user.isUserLoged = true;
@@ -23,5 +31,8 @@ export const actions = {
   },
   updateProducts: (products) => {
     state.products = products;
-  }
+  },
+  updateCategories: (categories) => {
+    state.categories = categories;
+  },
 };

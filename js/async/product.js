@@ -1,4 +1,4 @@
-import { baseUrl, allProductsUrl, proxyServer } from './urls.js'
+import { baseUrl, allProductsUrl, proxyServer, allCategoriesUrl } from './urls.js'
 import { actions} from './state.js';
 
 export async function getAllProducts(proxy = false) {
@@ -10,4 +10,23 @@ export async function getAllProducts(proxy = false) {
     } catch (error) {
     console.error(error);
   }
-}
+};
+
+export async function getAllCategories(proxy = false) {
+  const url = proxy ? proxyServer + '/api' : baseUrl + allCategoriesUrl;
+  try {
+    await fetch(url)
+    .then(response => response.json())
+    .then(json => actions.updateCategories(json));
+    } catch (error) {
+    console.error(error);
+    // !: Raskaciti kada se update-uje verzija backend-a
+    actions.updateCategories([{
+      id: 0,
+      name: 'bezalkoholna pica',
+    }, {
+      id: 1,
+      name: 'slatkisi',
+    }])
+  }
+};

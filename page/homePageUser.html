@@ -14,9 +14,11 @@
   <link rel="stylesheet" href="/shared/components/ProductRow/style.css">
   <link rel="stylesheet" href="/shared/components/Button/style.css">
   <link rel="stylesheet" href="/shared/style/homePage.css" />
+  <link rel="stylesheet" href="/shared/components/LanguagePicker/style.css">
   <!-- CDN icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
   <!-- SCRIPTS -->
+  <script type="module" defer src="/js/homepage/index.js"></script>
   <script type="module" defer src="/shared/components/Dropdown/script.js"></script>
   <script type="module" defer src="/js/homepage/filter.js"></script>
   <script type="module" defer src="/js/homepage/search.js"></script>
@@ -46,6 +48,10 @@
           <a href="#" class="logout"><img src="../image/MainPage/user-profile.png" alt="user profile" />
           </a>
           <a href="#"><img src="../image/MainPage/cart.png" alt="cart" /></a>
+          <select class="ws-language-picker">
+            <option value="en">English</option>
+            <option value="sr">Српски</option>
+          </select>
         </div>
       </div>
 
@@ -86,9 +92,6 @@
     <div class="productManipulations">
       <div class="categoryNavMenu">
         <div class="ws-hiperLink selected"><a href="#">All products</a></div>
-        <div class="ws-hiperLink"><a href="#">Category 1</a></div>
-        <div class="ws-hiperLink"><a href="#">Category 2</a></div>
-        <div class="ws-hiperLink"><a href="#">Category 3</a></div>
       </div>
 
       <div class="ws-filter-button">
@@ -130,37 +133,7 @@
     </div>
 
     <div class="productsGrid">
-      <div class="productCard">
-        <div class="productDisplayGroup">
-          <div class="productDisplay">
-            <img class="productImage" src="../image/MainPage/product.png" alt="" />
-          </div>
 
-          <div class="lager">
-            <div class="lagerInfo">
-              <p>3 left</p>
-            </div>
-            <div class="lagerAction">
-              <img src="../image/MainPage/cart-white.png" alt="" />
-              <div>
-                <p>Add to cart</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="productName">
-          <h3>Name of product</h3>
-        </div>
-
-        <div class="product-type-price-group">
-          <div class="product-type">
-            <p>Type of product</p>
-          </div>
-          <div class="product-price">
-            <p>$99.99</p>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   <div class="footer">

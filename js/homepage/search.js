@@ -16,7 +16,6 @@ input.addEventListener('keyup', (e) => {
     if (e.code === 'Enter') {
         searchPopup.classList.toggle('active');
 
-        console.log('addAPICall');
         const mockedBackendData = {
             data: [
                 {

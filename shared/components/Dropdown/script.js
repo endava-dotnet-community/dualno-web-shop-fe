@@ -1,4 +1,5 @@
-import { state } from "/js/async/state.js";
+import { state } from '../../../js/async/state.js';
+import { actions } from '../../../js/async/state.js';
 
 const wrapper = document.querySelector('.ws-select');
 const selectBtn = wrapper.querySelector('.select-btn');
@@ -6,7 +7,8 @@ const options = wrapper.querySelector('.options');
 const selectBtnText = selectBtn.querySelector('span');
 const searchInput = wrapper.querySelector('input');
 
-const loadedData = state.products.map(currentItem => currentItem.name); // [product[0].name, product[1].name]
+await actions.updateStateFields();
+const loadedData = state.categories.map(currentItem => currentItem.name);
 
 const selectItem = (element) => {
   selectBtnText.innerHTML = element.innerText;
@@ -35,6 +37,6 @@ searchInput.addEventListener('keyup', () => {
   let searchValue = searchInput.value;
   let searchValueLowerCase = searchValue.toLocaleLowerCase();
   resoult = loadedData.filter(item => item.toLocaleLowerCase().startsWith(searchValueLowerCase));
-  if(!!resoult.length) setItems(resoult, selectBtnText.innerText);
+  if (!!resoult.length) setItems(resoult, selectBtnText.innerText);
   else options.innerHTML = `<p>Oops! Nothing found</p>`
 });
