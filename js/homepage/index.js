@@ -1,5 +1,27 @@
 import { initState, actions } from '../async/state.js';
 import { state } from '../async/state.js';
+import { 
+  navMenuHeading as navMenuHeadingMessages,
+  ad as adMessages,
+} from '../../messages/homePage.js';
+
+const selectElement = document.querySelector('.ws-language-picker');
+const navMenuHeading = document.querySelector('.nav-bar');
+const navMenuItems = navMenuHeading.querySelectorAll('a');
+const adContainer = document.querySelector('.promoText');
+const adTitle = adContainer.querySelector('h1');
+const ad = adContainer.querySelector('p');
+
+selectElement.addEventListener('change', () => {
+  navMenuItems[0].innerHTML=navMenuHeadingMessages.shop[selectElement.value];
+  navMenuItems[1].innerHTML=navMenuHeadingMessages.aboutUs[selectElement.value];
+  navMenuItems[2].innerHTML=navMenuHeadingMessages.cart[selectElement.value];
+  adTitle.innerHTML=adMessages.title[selectElement.value];
+  ad.innerHTML=adMessages.body[selectElement.value];
+});
+
+const productGrid = document.querySelector('.productsGrid');
+const categoryNavMenu = document.querySelector('.categoryNavMenu');
 
 initState();
 

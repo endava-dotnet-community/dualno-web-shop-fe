@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Koka kola",
+      "category": {
+        "id": 2,
+        "name": "Bezalkoholna pica"
+      },
+      "price": 120.0000,
+      "description": "1,5L"
+    },
+    {
+      "id": 2,
+      "name": "Next jabuka",
+      "category": {
+        "id": 1,
+        "name": "Kafa"
+      },
+      "price": 80.0000,
+      "description": "Sok od jabuke"
+    },
+    {
+      "id": 3,
+      "name": "Sprite",
+      "category": {
+        "id": 2,
+        "name": "Bezalkoholna pica"
+      },
+      "price": 90.0000,
+      "description": "Dobro pice"
+    },
+    {
+      "id": 4,
+      "name": "Fanta",
+      "category": {
+        "id": 2,
+        "name": "Bezalkoholna pica"
+      },
+      "price": 100.0000,
+      "description": "Dobro pice od pomorandze"
+    },
+    {
+      "id": 5,
+      "name": "Fanta",
+      "category": {
+        "id": 2,
+        "name": "Bezalkoholna pica"
+      },
+      "price": 100.0000,
+      "description": "Dobro pice od pomorandze"
+    },
+    {
+      "id": 6,
+      "name": "Fanta",
+      "category": {
+        "id": 2,
+        "name": "Bezalkoholna pica"
+      },
+      "price": 100.0000,
+      "description": "Dobro pice od pomorandze"
+    },
+    {
+      "id": 7,
+      "name": "Fanta",
+      "category": {
+        "id": 2,
+        "name": "Bezalkoholna pica"
+      },
+      "price": 100.0000,
+      "description": "Dobro pice od pomorandze"
+    }
+  ]
+}

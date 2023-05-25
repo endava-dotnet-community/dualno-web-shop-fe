@@ -18,7 +18,7 @@ export const initState = () => {
 
 export const actions = {
   updateStateFields: async () => {
-    await getAllProducts();
+    await getAllProducts(true);
     await getAllCategories();
   },
   updateLoginState: (user) => {

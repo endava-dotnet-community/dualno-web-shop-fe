@@ -1,8 +1,14 @@
-import { baseUrl, allProductsUrl, proxyServer, allCategoriesUrl } from './urls.js'
+import { 
+  baseUrl,
+  allProductsUrl,
+  proxyServer,
+  allCategoriesUrl,
+  proxyAllProductsUrl,
+} from './urls.js'
 import { actions} from './state.js';
 
 export async function getAllProducts(proxy = false) {
-  const url = proxy ? proxyServer + '/api' : baseUrl + allProductsUrl;
+  const url = proxy ? proxyServer + proxyAllProductsUrl : baseUrl + allProductsUrl;
   try {
     await fetch(url)
     .then(response => response.json())
